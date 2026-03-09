@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIEMP - Simple Integrated Enterprise Management Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h1>SIEMP</h1>
+            <p class="subtitle">Enterprise Management Platform</p>
+            
+            <form id="loginForm" onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                
+                <button type="submit" class="btn-login">Login</button>
+            </form>
+            
+            <p class="signup-link">
+                Don't have an account? <a href="#" onclick="showSignup(event)">Create one</a>
+            </p>
+            
+            <div id="signupForm" class="hidden">
+                <h2>Create Account</h2>
+                <form onsubmit="handleSignup(event)">
+                    <div class="form-group">
+                        <label for="newUsername">Username:</label>
+                        <input type="text" id="newUsername" name="newUsername" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="newPassword">Password:</label>
+                        <input type="password" id="newPassword" name="newPassword" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password:</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    </div>
+                    
+                    <button type="submit" class="btn-signup">Sign Up</button>
+                    <button type="button" class="btn-back" onclick="hideSignup(event)">Back to Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

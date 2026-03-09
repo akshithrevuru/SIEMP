@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIEMP - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">SIEMP</h1>
+            <nav class="nav-links">
+                <a href="dashboard.html" class="active">Dashboard</a>
+                <a href="contact.html">Support</a>
+                <button onclick="logout()" class="btn-logout">Logout</button>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="dashboard-container">
+        <section class="welcome-section">
+            <h2>Welcome, <span id="userDisplay">Manager</span></h2>
+            <p>Simple Integrated Enterprise Management Platform</p>
+        </section>
+        
+        <section class="features-section">
+            <div class="feature-box">
+                <h3>💼 Employee Management</h3>
+                <p>View and manage employee records and profiles</p>
+                <button onclick="viewEmployees()">Manage Employees</button>
+            </div>
+            
+            <div class="feature-box">
+                <h3>📊 Sales Analytics</h3>
+                <p>Track sales performance and revenue metrics</p>
+                <button onclick="viewSalesAnalytics()">View Analytics</button>
+            </div>
+            
+            <div class="feature-box">
+                <h3>📦 Inventory Management</h3>
+                <p>Monitor stock levels and product inventory</p>
+                <button onclick="viewInventory()">Check Inventory</button>
+            </div>
+            
+            <div class="feature-box">
+                <h3>📈 Financial Reports</h3>
+                <p>Generate and download financial statements</p>
+                <button onclick="downloadFinancialReport()">Download Report</button>
+            </div>
+            
+            <div class="feature-box">
+                <h3>👥 Team Collaboration</h3>
+                <p>Manage projects and team tasks</p>
+                <button onclick="viewTeamProjects()">View Projects</button>
+            </div>
+            
+            <div class="feature-box">
+                <h3>💰 Payroll Management</h3>
+                <p>Process salaries and generate payslips</p>
+                <button onclick="viewPayroll()">Manage Payroll</button>
+            </div>
+            
+            <div class="feature-box">
+                <h3>⚙️ System Settings</h3>
+                <p>Configure system and user preferences</p>
+                <button onclick="openSettings()">System Settings</button>
+            </div>
+            
+            <div class="feature-box">
+                <h3>📧 Communication Hub</h3>
+                <p>Send messages and notifications to teams</p>
+                <button onclick="openMessaging()">Open Messages</button>
+            </div>
+            
+            <div class="feature-box">
+                <h3>📋 Compliance & Audit</h3>
+                <p>View audit logs and compliance reports</p>
+                <button onclick="viewAuditLogs()">View Logs</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <p>&copy; 2024 SIEMP - Simple Integrated Enterprise Management Platform</p>
+    </footer>
+    
+    <script src="app.js"></script>
+</body>
+</html>
