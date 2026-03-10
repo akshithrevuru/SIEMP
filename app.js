@@ -1,6 +1,6 @@
 // SIEMP - Simple Integrated Enterprise Management Platform
 // Enterprise database and functions
-
+<!-- javascript -->
 var userDatabase = {};
 var supportTickets = [];
 var employees = [
